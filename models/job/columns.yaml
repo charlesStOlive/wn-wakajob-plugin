@@ -1,0 +1,38 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    label:
+        label: Label
+        type: partial
+        path: $/waka/wakajob/controllers/jobs/_list_label.htm
+        sortable: false
+        searchable: false
+    # progress:
+    #     label: Progress
+    #     type: partial
+    #     path: $/waka/wakajob/controllers/jobs/_list_progress.htm
+    #     sortable: false
+    # # is_canceled:
+    # #     label: Canceled
+    # #     type: listtoggle
+    # #     readOnly: true
+    # progress_current:
+    #     label: Curent Progress
+    #     invisible: true
+    # progress_max:
+    #     label: Max progress
+    #     invisible: true
+    q_name:
+        label: Queue
+    status:
+        label: Status
+        type: partial
+        path: $/waka/wakajob/controllers/jobs/_list_status.htm
+    created_at:
+        label: Started at
+        type: datetime

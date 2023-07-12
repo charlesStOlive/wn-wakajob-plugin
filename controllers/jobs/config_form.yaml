@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: waka.wakajob::lang.job.label
+
+# Model Form Field configuration
+form: $/waka/wakajob/models/job/fields.yaml
+
+# Model Class name
+modelClass: Waka\Wakajob\Models\Job
+
+# Default redirect location
+defaultRedirect: waka/wakajob/jobs
+
+# Create page
+create:
+    title: waka.wakajob::lang.job.create_title
+    redirect: waka/wakajob/jobs/update/:id
+    redirectClose: waka/wakajob/jobs
+
+# Update page
+update:
+    title: waka.wakajob::lang.job.update_title
+    redirect: waka/wakajob/jobs
+    redirectClose: waka/wakajob/jobs
+
+# Preview page
+preview:
+    title: waka.wakajob::lang.job.preview_title

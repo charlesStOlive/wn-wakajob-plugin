@@ -1,0 +1,25 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true">&times;</button>
+            <h5><?=e(trans('waka.wakajob::lang.popup.confirm_title'))?></h5>
+        </div>
+        <div class="modal-body">
+            <?=e(trans('waka.wakajob::lang.popup.confirm_p'))?> <a
+               href="<?= \Backend::url('waka/wakajob/jobs/view/' . $jobId) ?>"><?=e(trans('waka.wakajob::lang.popup.btn'))?></a>
+        </div>
+
+        <div class="modal-footer m-t">
+            <button type="button"
+                    class="btn btn-default"
+                    data-dismiss="popup">
+                <?=e(trans('waka.wutils::lang.global.termined'))?>
+            </button>
+        </div>
+    </div>
+</div>
+
+<?= Form::close() ?>

@@ -1,0 +1,60 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+secondaryTabs:
+    fields:
+
+        layout:
+            label: waka.wakajob::lang.settings.messaging-layout
+            tab: waka.wakajob::lang.settings.messaging-tab
+            span: left
+            type: dropdown
+        theme:
+            label: waka.wakajob::lang.settings.messaging-theme
+            tab: waka.wakajob::lang.settings.messaging-tab
+            type: text
+            span: right
+            placeholder: 'defaultTheme / relax / bootstrapTheme'
+        openAnimation:
+            label: waka.wakajob::lang.settings.messaging-openAnimation
+            tab: waka.wakajob::lang.settings.messaging-tab
+            span: left
+            type: dropdown
+            default: 'animated fadeIn'
+        closeAnimation:
+            label: waka.wakajob::lang.settings.messaging-closeAnimation
+            tab: waka.wakajob::lang.settings.messaging-tab
+            span: right
+            type: dropdown
+            default: 'animated fadeOut'
+        dismissQueue:
+            label: waka.wakajob::lang.settings.messaging-dismissQueue
+            tab: waka.wakajob::lang.settings.messaging-tab
+            type: switch
+        force:
+            label: waka.wakajob::lang.settings.messaging-force
+            tab: waka.wakajob::lang.settings.messaging-tab
+            type: switch
+        modal:
+            label: waka.wakajob::lang.settings.messaging-modal
+            tab: waka.wakajob::lang.settings.messaging-tab
+            type: switch
+        timeout:
+            label: waka.wakajob::lang.settings.messaging-timeout
+            tab: waka.wakajob::lang.settings.messaging-tab
+            span: left
+            type: number
+            default: 5
+        maxVisible:
+            label: waka.wakajob::lang.settings.messaging-maxVisible
+            tab: waka.wakajob::lang.settings.messaging-tab
+            type: number
+            span: right
+            default: 5
+        template:
+            label: waka.wakajob::lang.settings.messaging-template
+            tab: waka.wakajob::lang.settings.messaging-tab
+            type: textarea
