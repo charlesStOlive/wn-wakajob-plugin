@@ -1,0 +1,6 @@
+1.0.1:
+    - Queue Jobs support
+    - create_jobs_table.php
+1.0.2:
+    - Ajout du Queue name
+    - create_jobs_table_u110.php
