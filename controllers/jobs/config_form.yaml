@@ -23,7 +23,7 @@ create:
 # Update page
 update:
     title: waka.wakajob::lang.job.update_title
-    redirect: waka/wakajob/jobs
+    redirect: waka/wakajob/jobs/update/:id
     redirectClose: waka/wakajob/jobs
 
 # Preview page
