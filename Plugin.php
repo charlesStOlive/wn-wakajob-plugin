@@ -76,14 +76,14 @@ class Plugin extends PluginBase
     {
         return [
             'notification' => [
-                'label' => Lang::get('waka.utils::lang.menu.job_list'),
-                'description' => Lang::get('waka.utils::lang.menu.job_list_s'),
-                'category' => Lang::get('waka.utils::lang.menu.settings_controle'),
+                'label' => Lang::get('waka.wakajob::lang.menu.job_list'),
+                'description' => Lang::get('waka.wakajob::lang.menu.job_list_description'),
+                'category' => Lang::get('waka.wakajob::lang.menu.settings_controle'),
                 'icon' => 'icon-refresh',
                 'url' => Backend::url('waka/wakajob/jobs'),
                 'order' => 1,
                 'permissions' => ['waka.wakajob.*'],
-                'counterLabel' => Lang::get('waka.utils::lang.joblist.btn_counter_label'),
+                'counterLabel' => Lang::get('waka.wakajob::lang.joblist.btn_counter_label'),
             ]
         ];
     }
