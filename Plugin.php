@@ -78,10 +78,10 @@ class Plugin extends PluginBase
             'notification' => [
                 'label' => Lang::get('waka.wakajob::lang.menu.job_list'),
                 'description' => Lang::get('waka.wakajob::lang.menu.job_list_description'),
-                'category' => Lang::get('waka.wakajob::lang.menu.settings_controle'),
+                'category' => Lang::get('waka.wutils::lang.menu.model_tasks'),
                 'icon' => 'icon-refresh',
                 'url' => Backend::url('waka/wakajob/jobs'),
-                'order' => 1,
+                'order' => 001,
                 'permissions' => ['waka.wakajob.*'],
                 'counterLabel' => Lang::get('waka.wakajob::lang.joblist.btn_counter_label'),
             ]
