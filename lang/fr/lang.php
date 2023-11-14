@@ -8,6 +8,9 @@ return [
         'preview_title' => 'Prévisualiser la tâche',
         'update_title' => 'Modifier la tâche',
     ],
+    'joblist' => [
+        'btn_counter_label' => 'Nombre',
+    ],
     'jobs' => [
         'complete' => 'Terminé',
         'delete_confirm' => 'Voulez-vous vraiment supprimer la tâche ?',
@@ -24,6 +27,10 @@ return [
     ],
     'labels' => [
         'pluginName' => 'Tâche',
+    ],
+    'menu' => [
+        'job_list' => 'Liste des tâches',
+        'job_list_description' => 'Gestion des tâches',
     ],
     'permissions' => [
         'access_settings' => 'Accès gestionnaire de tâches CRON',
@@ -43,13 +50,5 @@ return [
         'last_update' => 'Dernière mise à jour',
         'status' => 'Statut',
         'value' => 'Valeur',
-    ],
-    'joblist' => [
-        'btn_counter_label' => 'Nombre',
-    ],
-    'menu' => [
-        'job_list' => 'Liste des tâches',
-        'settings_controle' => 'Tâches',
-        'job_list_description' => 'Gestion des tâches',
     ],
 ];
