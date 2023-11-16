@@ -11,7 +11,6 @@ use Waka\Wakajob\Classes\BackendInjector;
 use Waka\Wakajob\Classes\DependencyInjector;
 use Waka\Wakajob\Classes\RouteResolver;
 use Waka\Wakajob\Console\Optimize;
-use Waka\Wakajob\FormWidgets\ListToggle;
 use Waka\Wakajob\Console\QueueClearCommand;
 use Waka\Wakajob\Classes\LaravelQueueClearServiceProvider;
 use System\Classes\PluginBase;
@@ -41,15 +40,6 @@ class Plugin extends PluginBase
         ];
     }
 
-    /**
-     * @return array
-     */
-    public function registerComponents(): array
-    {
-        return [
-            //Components\Messaging::class => 'wakajobFlashMessages',
-        ];
-    }
 
     /**
      * @return array
@@ -57,19 +47,11 @@ class Plugin extends PluginBase
     public function registerPermissions(): array
     {
         return [
-            'waka.wakajob.user' => [
-                'tab'   => 'waka.wakajob::lang.permissions.tab',
-                'label' => 'waka.wakajob::lang.permissions.access_settings',
+            'waka.wakajob.admin.base' => [
+                'tab'   => 'Waka - Jobs',
+                'label' => 'Administrateur de wakaJob',
             ],
         ];
-    }
-
-    /**
-     * @return array
-     */
-    public function registerNavigation(): array
-    {
-        return [];
     }
 
     public function registerSettings()
@@ -82,7 +64,7 @@ class Plugin extends PluginBase
                 'icon' => 'icon-refresh',
                 'url' => Backend::url('waka/wakajob/jobs'),
                 'order' => 001,
-                'permissions' => ['waka.wakajob.*'],
+                'permissions' => ['waka.wakajob.admin.*'],
                 'counterLabel' => Lang::get('waka.wakajob::lang.joblist.btn_counter_label'),
             ]
         ];
@@ -100,34 +82,5 @@ class Plugin extends PluginBase
                 QueueClearCommand::class,
             ]
         );
-    }
-
-    /**
-     * @return array
-     */
-    public function registerListColumnTypes(): array
-    {
-        return [
-            'listtoggle' => [ListToggle::class, 'render'],
-        ];
-    }
-
-
-    /**
-     * Plugin boot method
-     * @throws \ApplicationException
-     */
-    public function boot(): void
-    {
-        /**
-         * POur le bouton des jobs
-         */
-        // Event::listen('backend.page.beforeDisplay', function ($controller, $action, $params) {
-        //     $user = \BackendAuth::getUser();
-        //     if ($user->hasAccess('waka.jobList.*') && UtilsSettings::get('activate_task_btn')) {
-        //         // $pluginUrl = url('/plugins/waka/wakajob');
-        //         // \Block::append('body', '<script type="text/javascript" src="' . $pluginUrl . '/assets/js/backendnotifications.js"></script>');
-        //     }
-        // });
     }
 }

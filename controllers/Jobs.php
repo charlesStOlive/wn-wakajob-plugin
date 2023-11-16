@@ -32,6 +32,9 @@ class Jobs extends Controller
      */
     public $listConfig = 'config_list.yaml';
 
+
+    public $requiredPermissions = ['waka.wakajob.admin.*'];
+
     /**
      * Jobs constructor.
      */
@@ -47,7 +50,6 @@ class Jobs extends Controller
     public function index(): void
     {
         $this->addJs('/plugins/waka/wakajob/assets/js/wakajob-jobs.js');
-
         $this->asExtension('ListController')->index();
     }
 
