@@ -18,10 +18,14 @@ return [
         'delete_selected_empty' => 'There is no task to delete.',
         'delete_selected_success' => 'The task has been successfully deleted.',
         'error' => 'Error!',
+        'ids_error' => 'Tr:ids_error',
         'in_progress' => 'In progress',
         'in_queue' => 'In queue',
         'menu_label' => 'Tasks',
         'return_to_list' => 'Back to task list',
+        'scoped' => 'Tr:scoped',
+        'send' => 'Tr:send',
+        'skipped' => 'Tr:skipped',
         'stopped' => 'Stopped',
         'unknown' => 'Unknown error',
     ],
@@ -31,10 +35,6 @@ return [
     'menu' => [
         'job_list' => 'Task list',
         'job_list_description' => 'Task management',
-    ],
-    'permissions' => [
-        'access_settings' => 'Access to CRON task manager',
-        'tab' => 'Waka - CRON',
     ],
     'popup' => [
         'btn' => 'here',

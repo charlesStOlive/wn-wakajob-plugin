@@ -36,10 +36,6 @@ return [
         'job_list' => 'Liste des tâches',
         'job_list_description' => 'Gestion des tâches',
     ],
-    'permissions' => [
-        'access_settings' => 'Accès gestionnaire de tâches CRON',
-        'tab' => 'Waka - CRON',
-    ],
     'popup' => [
         'btn' => 'ici',
         'confirm_p' => 'Pour le voir, cliquez',
