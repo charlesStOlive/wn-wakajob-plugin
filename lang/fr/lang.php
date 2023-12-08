@@ -18,7 +18,7 @@ return [
         'delete_selected_empty' => 'Il n\'y a pas de tâche à supprimer.',
         'delete_selected_success' => 'La tâche a bien été supprimée.',
         'error' => 'Erreur !',
-        'ids_error' => 'Erreur',
+        'ids_error' => 'Ids, porteur de l\'erreur',
         'in_progress' => 'En cours',
         'in_queue' => 'En attente',
         'menu_label' => 'Tâches',
